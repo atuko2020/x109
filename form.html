@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "UTF-8">
+        <title>X109_YUSUKE YOSHIDA</title>
+        <meta name = "description" content = "吉田侑介のプロフィール">
+    </head>
+
+    <body>
+        <div id="container"><!--container-->
+            <header><!--header--><h1>Yusuke Yoshida</h1></header><!--/header-->
+            <main><!--main-->
+                <section><!--section-->
+                    <h2>X109アンケート</h2>
+                    <form action="#" method="POST" name="contact-form"><!--form-->
+                        <p>
+                            <label>名前：<input type="text" placeholder="姓  名"></label>   
+                        </p>
+                        <p>
+                            性別：
+                            <input type="radio" name="gender" value="男" id="man">
+                            <label for="man">男</label>
+
+                            <input type="radio" name="gender" value="女" id="women">
+                            <label for="women">女</label>
+                        
+                            <input type="radio" name="gender" value="その他" id="other">
+                            <label for="other">その他</label>
+                        </p>
+                        <p>
+                            好きな色：
+                            <input type="checkbox" name="color" value="赤" id="red">
+                            <label for="red">赤</label>
+                            <input type ="checkbox" name="color" value="青" id="blue">
+                            <label for="blue">青</label>
+                            <input type="checkbox" name="color" value="黄" id="yellow">
+                            <label for="yellow">黄</label>
+                            <input type="checkbox" name="color" value="緑" id="green">
+                            <label for="green">緑</label>
+                            <label>その他：<input type="text" name="color"></label>
+                        </p>
+                        <p>
+                            <label>
+                                血液型：
+                                <select name="bloodtype">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="O">O</option>
+                                    <option value="AB">AB</option>
+                                    <option value="不明">不明</option>
+                                </select>
+                            </label>
+                        </p>
+                        <label>
+                            <p>一言アドバイスがあればお願いします。</p>
+                            <textarea name="masseage" rows="5" cols="40" placeholder="メッセージを入力"></textarea>
+                        </label>
+                        <br><br>
+                        <input type="image" src="images/button.png" alt="送信する">
+                    </form><!--/form-->
+                </section><!--/section-->
+            </main><!--/main-->
+
+            <footer><!--footer-->
+                <p>Last Modified :
+                    <script>
+                        var modified = new Date(document.lastModified);
+                        var year = modified.getFullYear();
+                        var month= modified.getMonth() + 1;
+                        var date = modified.getDate();
+                        var day = modified.getDay();
+                        var dayName = ["日", "月", "火", "水", "木", "金", "土"][day];
+                        document.write( year + "年" + month + "月" + date + "日" + dayName +"曜日" );//曜日追加
+                    </script>
+                </p>
+                <p><small>&copy;Yusuke Yoshida, All Rights Reserved.</small></p>
+            </footer><!--/footer-->
+        </div><!--/container-->
+
+    </body>
+
+</html>

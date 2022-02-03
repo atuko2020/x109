@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body {
+    background-image: url(../images/b.png);
+}
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #4A403A; background-color: #FFBC61;
+}
+h2 {
+    font-family: "游ゴシック体","Yu Gothic","YuGothic", sans-serif;
+    color: #F8F0DF; background-color: #AAAAAA;
+}
+p {
+    font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro", sans-serif;
+    text-align: justify; line-height: 1.7; color: #4A403A;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "UTF-8">
+        <title>X109_YUSUKE YOSHIDA</title>
+        <meta name = "description" content = "吉田侑介のプロフィール">
+    </head>
+
+    <body>
+        <div id="container"><!--container-->
+            <header><!--header--><h1>Yusuke Yoshida</h1></header><!--/header-->
+            <main><!--main-->
+                <section><!--section-->
+                    <h2>X109アンケート2</h2>
+                    <form action="#" method="POST" name="contact-form"><!--form-->
+                        <p>
+                            <label>出席番号を入力して下さい。
+                                <input type="text" placeholder="ex.X000" required pattern="[ABXSP][0-9]{1,3}">
+                            </label>   
+                        </p>
+                        <p>
+                            <label>banana と cherry と orange のどれが好き？
+                                <input type="text" placeholder="Orange" required pattern="[Bb]anana|[Cc]herry|[Oo]range">
+                            </label>
+                        </p>
+                        <p>
+                            <label>どのくらい要ります？
+                                <input type="number" value="1" required max="10" min="1" title="値は10以下にする必要があります。">
+                            </label>
+                        </p>
+                        <input type="image" src="images/button.png" alt="送信する">
+                    </form><!--/form-->
+                </section><!--/section-->
+            </main><!--/main-->
+
+            <footer><!--footer-->
+                <p>Last Modified :
+                    <script>
+                        var modified = new Date(document.lastModified);
+                        var year = modified.getFullYear();
+                        var month= modified.getMonth() + 1;
+                        var date = modified.getDate();
+                        var day = modified.getDay();
+                        var dayName = ["日", "月", "火", "水", "木", "金", "土"][day];
+                        document.write( year + "年" + month + "月" + date + "日" + dayName +"曜日" );//曜日追加
+                    </script>
+                </p>
+                <p><small>&copy;Yusuke Yoshida, All Rights Reserved.</small></p>
+            </footer><!--/footer-->
+        </div><!--/container-->
+
+    </body>
+
+</html>

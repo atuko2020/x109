@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+    background-image: url(../images/b.png); margin: 0;
+}
+#container {
+    width: 80%; margin-right: auto; margin-left: auto;
+}
+header {
+    height: 300px; 
+}
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #4A403A; background-color: #FFBC61;
+    margin: 0; padding: 1rem 1rem 0;                             /* 9/13 h1まで完了 */
+}
+h2 {
+    font-family: "游ゴシック体","Yu Gothic","YuGothic", sans-serif;
+    color: #000000; background-color: #c0c0c0;
+    padding: 0.5rem 0.5rem 0; 
+    border-width: 0 0 2px 4px; border-style: ridge; border-color: #4A403A;
+}
+p {
+    font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro", sans-serif;
+    text-align: justify; line-height: 1.7; color: #4A403A;
+    padding: 0 1rem;
+}
+q {
+    font-size: 1.2rem;
+}

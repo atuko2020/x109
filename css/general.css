@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/*-------------------
+    全ページ共通部分
+---------------------*/
+
+/*
+    全体
+--------------*/
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro M3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+    margin: 0;
+    background-image: url("../images/background-images/pw_pattern.png");
+    background-position: center top;
+    background-repeat: repeat;
+}
+main {
+    
+    padding-bottom: 100px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*-------------
+    header
+---------------*/
+header{
+    height: 700px;
+}
+h1 {
+    position: absolute;
+    font-size: 150px;
+}
+.first { 
+    top: 25%;
+    left: 10%;
+    color: black;
+    animation: off 2s forwards ease-in;
+}
+.last {
+    top: 36%;
+    left: 20%;
+    color: orange;
+    animation: off 2.5s forwards ease-in;
+}
+@keyframes off {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    25% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+}
+/*
+    h2タイトル
+---------------*/
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    height: 100px;
+
+}
+
+/*---------------------
+    ページトップボタン
+-----------------------*/
+p.pagetop {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    opacity: 0.20; /* 透過20% */
+}
+p.pagetop a {
+    display: block;
+    text-decoration: none;
+}
+p.pagetop:hover {
+    opacity: 0.85; /* 透過85% */
+}
+
+/*----------------
+    フッター
+-----------------*/
+footer{
+    margin-top: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+/*
+    最下部固定
+----------------*/
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1;
+}
+
+/*---------------
+    Mobile
+-----------------*/
+@media screen and (max-width: 700px) {
+    h1 {
+        position: absolute;
+        font-size: 100px;
+    }
+    .first { 
+        top: 25%;
+    }
+    .last {
+        top: 32%;
+    }
+}

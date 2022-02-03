@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+p.pagetop {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    opacity: 0.20; /* 透過20% */
+}
+p.pagetop a {
+    display: block;
+    text-decoration: none;
+}
+p.pagetop:hover {
+    opacity: 0.85; /* 透過85% */
+}

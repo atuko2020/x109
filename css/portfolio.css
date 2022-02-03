@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+/*---------------
+    works
+-----------------*/
+#works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-around;
+}
+#works a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    font-size: 2em;
+    color: blue;
+    padding-top: 50px;
+    transition: all 1s ease-out;
+}
+#works div a {
+    padding-top: 200px;
+    padding-left: 50px;
+}
+#works div:nth-child(1) a {
+    background-image: url(../images/kadai9.png);
+    background-size:cover;  
+}
+#works div:nth-child(2) a {
+    background-image: url(../images/kadai10.png);
+    background-size:cover;
+}
+#works div:nth-child(3) a {
+    background-image: url(../images/kadai20.png);
+    background-size:cover;
+}
+#works div:nth-child(4) a {
+    background-image: url(../images/kadai21.png);
+    background-size:cover;
+}
+#works div:nth-child(5) a {
+    background-image: url(../images/kadai22.png);
+    background-size:cover;
+}
+#works a:visited {
+    color: #FB7D79;
+}
+#works div a:hover {
+    transform: scale(1.1);
+    color:#b385dd;
+}
+
+/*--------------
+    about_me
+----------------*/
+#about_me p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 40px 0;
+}
+#table {
+    display: flex;
+    gap: 5px;
+}
+/*
+    profile
+-------------*/
+#profile {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 2px black;
+    background-color: white;
+}
+#profile caption{
+    padding: 0.5em;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+#profile th{
+    background-color: lightsteelblue;
+}
+#profile th, #profile td {
+    border: dashed 1px black;
+}
+/*
+    schedule
+--------------*/
+#schedule {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 2px black;
+    background-color: white;
+} 
+#schedule caption{
+    padding: 0.5em 0.5em 0 0.5em;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+#schedule tr:nth-child(1) th:nth-child(1){
+    background-color: #F0E3E3;
+}
+#schedule tr:nth-child(n+2):nth-child(-n+6) th{
+    background-color: #F0E3E3;
+}
+#schedule tr:nth-child(1) th:nth-child(n+2):nth-child(-n+5){
+    background-color: #E57F75;
+}
+#schedule th, #schedule td {
+    border: dashed 1px black;
+}
+
+/*--------------
+    contact_me
+----------------*/
+#form {
+    display: flex;
+}
+#contact_me form {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact_me p {
+    font-weight: bolder;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background-color: rgba(255,255,255,.5);
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+textarea {
+    vertical-align: top;
+}
+input[type="submit"] {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px 6px;
+    color: #454545;
+    background-color: #DBDBDB;
+}
+input[type="submit"]{ 
+    margin-left: 400px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    background: #bedcff;
+    border:1px solid black;
+    outline: none;
+}
+input[type="submit"]:hover {
+    transition: .2s;
+    color: #454545;
+    background-color: #bedcff;
+}
+
+/*-------------
+    Moblie
+--------------*/
+@media screen and (max-width: 850px) {
+    #table {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about_me p {
+        font-size: 1.2rem;
+        text-align:center;
+        margin: 40px 20px;
+    }
+}
