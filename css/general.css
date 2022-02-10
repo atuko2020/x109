@@ -160,4 +160,10 @@ main{
     .last {
         top: 40%;
     }
+    /*-----
+        contact_me
+    ---------------*/
+    #contact_me h2 {
+        font-size: 40px;
+    }
 }
